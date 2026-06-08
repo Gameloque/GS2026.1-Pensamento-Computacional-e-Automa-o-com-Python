@@ -5,27 +5,45 @@ Mission_Control_ai - Explicação das estruturas utilizadas no código
 O sistema monitora cinco áreas fundamentais da missão espacial:
 
 Temperatura Interna	 ---> Controle térmico da nave
+
 Comunicação com a Base ---> 	Qualidade do sinal de comunicação
+
 Sistema de Energia ---> 	Nível de bateria disponível
+
 Suporte de Oxigênio ---> 	Nível de oxigênio da missão
+
 Estabilidade Operacional ---> 	Funcionamento geral dos sistemas
+
 
 Estrutura dos Dados
 
 Os dados são armazenados em uma matriz chamada dados_missao.
+
 Cada linha representa um ciclo de monitoramento.
+
+
 23, 95, 91, 97, 93
+
 28, 78, 74, 93, 82
+
 33, 61, 55, 89, 67
+
 37, 39, 35, 85, 52
+
 41, 25, 17, 76, 32
+
 35, 52, 30, 81, 48
+
 Cada posição representa:
+
 temperatura,  comunicacao, bateria, oxigenio,estabilidade
 
 
+
 Regras de Classificação
+
 Temperatura
+
 Condição              	Status
 Menor que 18°C	        ATENÇÃO
 Entre 18°C e 30°C      	NORMAL
